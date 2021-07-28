@@ -78,17 +78,17 @@ public class ForgotPasswordController {
 						Mailer.send("linndaimmeri@gmail.com", "Go#Google312",emailAddress , "Reset Password",
 								"<div>	\r\n"
 										+ "<img src=\"https://preview.ibb.co/enfhY8/UP.gif\" style=\"float: left;\">\r\n"
-										+ "<h1 style=\"padding-top:50 \">Sistemi Për Menaxhimin e Studentëve (SPMS)</h1>\r\n"
+										+ "<h1 style=\"padding-top:50 \">Sistemi PÃ«r Menaxhimin e StudentÃ«ve (SPMS)</h1>\r\n"
 										+ "</div>\r\n" + "\r\n"
 										+ "<div style=\"margin-top: 200px; margin-left: 200px;\">\r\n"
-										+ "<h3 style=\"font-weight: bold;\">I/e nderuar ju keni bërë kërkesë për ndërrim të fjalëkalimit</h3>\r\n"
+										+ "<h3 style=\"font-weight: bold;\">I/e nderuar ju keni bÃ«rÃ« kÃ«rkesÃ« pÃ«r ndÃ«rrim tÃ« fjalÃ«kalimit</h3>\r\n"
 										+ "</div>\r\n" + "\r\n"
 										+ "<div style=\" margin-top: 50px; margin-left: 200px;\">\r\n"
 										+ "Kodi juaj:<h3 style=\"color: blue;border-bottom:1px solid gray; text-align: center; display: inline; margin-left:50px;\">"
 										+ hash + "</h3>\r\n" + "</div>\r\n" + "\r\n"
 										+ "<div style=\" margin-top: 200px; margin-left: 50px;\">\r\n"
-										+ "<p style=\"font-style: italic;\">Ky është email i automatizuar, ju lutemi të mos ktheni përgjigje.</p>\r\n"
-										+ "  <p style=\"font-style: italic;\"> SPMS, Universiteti i Prishtinës \"Hasan Prishtina\" </p>\r\n"
+										+ "<p style=\"font-style: italic;\">Ky Ã«shtÃ« email i automatizuar, ju lutemi tÃ« mos ktheni pÃ«rgjigje.</p>\r\n"
+										+ "  <p style=\"font-style: italic;\"> SPMS, Universiteti i PrishtinÃ«s \"Hasan Prishtina\" </p>\r\n"
 										+ "</div>");
 						email = true;
 						
