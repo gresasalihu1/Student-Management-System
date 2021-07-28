@@ -79,22 +79,22 @@ public class RegisterController{
 	Hashing hash=new Hashing();
 
 	ObservableList <String> shtetiList=FXCollections.observableArrayList("Kosove","Shqiperi","Mali i Zi","Maqedoni");
-ObservableList<String> drejtimiList=FXCollections.observableArrayList("Automatikë e Kompjuterizuar dhe Robotikë","Elektroenergjetikë","Elektronikë"," Inxhinieri Kompjuterike","Telekomunikacion");
-ObservableList<String> niveliList=FXCollections.observableArrayList("Bachelor","Master","Doktoraturë");
-ObservableList<String> fakultetiList=FXCollections.observableArrayList("Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike");
-ObservableList<String> kosoveList=FXCollections.observableArrayList("Deçan","Sharr",	"Hani i Elezit",	
-"Ferizaji","Gjakovë","Gjilan",	"Drenas",	"Graçanica","Burimi	","Juniku	","Kaçaniku","Dardana",	"Klina",	"Kllokot",	
-"Fushë Kosovë",	"Albanik","Lipjani",	"Malishevë","Mamushë","Mitrovicë","Artana",	"Kastriot",	"Rahovec",
-"Parteshi","Pejë",	"Prishtinë","Prizreni",	"Besiana",	"Ranillugu",	"Skënderaj",	
-"Shtërpca",	"Shtime",	"Therandë",	"Viti",	"Vushtrri"	,"Zubin Potok","Zveçan");
+ObservableList<String> drejtimiList=FXCollections.observableArrayList("AutomatikÃ« e Kompjuterizuar dhe RobotikÃ«","ElektroenergjetikÃ«","ElektronikÃ«"," Inxhinieri Kompjuterike","Telekomunikacion");
+ObservableList<String> niveliList=FXCollections.observableArrayList("Bachelor","Master","DoktoraturÃ«");
+ObservableList<String> fakultetiList=FXCollections.observableArrayList("Fakulteti i InxhinierisÃ« Elektrike dhe Kompjuterike");
+ObservableList<String> kosoveList=FXCollections.observableArrayList("DeÃ§an","Sharr",	"Hani i Elezit",	
+"Ferizaji","GjakovÃ«","Gjilan",	"Drenas",	"GraÃ§anica","Burimi	","Juniku	","KaÃ§aniku","Dardana",	"Klina",	"Kllokot",	
+"FushÃ« KosovÃ«",	"Albanik","Lipjani",	"MalishevÃ«","MamushÃ«","MitrovicÃ«","Artana",	"Kastriot",	"Rahovec",
+"Parteshi","PejÃ«",	"PrishtinÃ«","Prizreni",	"Besiana",	"Ranillugu",	"SkÃ«nderaj",	
+"ShtÃ«rpca",	"Shtime",	"TherandÃ«",	"Viti",	"Vushtrri"	,"Zubin Potok","ZveÃ§an");
 
-ObservableList<String> shqiperiList=FXCollections.observableArrayList("Tirana	","Durrësi","Shkodra"	,"Elbasani",
-"Vlora"	,"Korça"	,"Fieri	","Berati	","Lushnja"	,"Pogradeci	","Laçi"	,"Lezha	",
-"Kukësi	","Gjirokastra");
-ObservableList<String> maliList=FXCollections.observableArrayList("Andrijevica","Bellopoja","Berana","Budua","Çetina",
+ObservableList<String> shqiperiList=FXCollections.observableArrayList("Tirana	","DurrÃ«si","Shkodra"	,"Elbasani",
+"Vlora"	,"KorÃ§a"	,"Fieri	","Berati	","Lushnja"	,"Pogradeci	","LaÃ§i"	,"Lezha	",
+"KukÃ«si	","Gjirokastra");
+ObservableList<String> maliList=FXCollections.observableArrayList("Andrijevica","Bellopoja","Berana","Budua","Ã‡etina",
 	"Danilovgradi","Golluboci","Herceg Novi","Koloshini","Kotorri","Mojkovaci","Nikshiqi","Plava","Plevla","Pluzhina");
 
-	ObservableList<String> maqedoniaList=FXCollections.observableArrayList("Berova","Dellçeva","Koçani","Kamenica",	"Peçeva	",
+	ObservableList<String> maqedoniaList=FXCollections.observableArrayList("Berova","DellÃ§eva","KoÃ§ani","Kamenica",	"PeÃ§eva	",
 		"Probishtipi","Shtipi","Vinica");
 	@FXML
     private AnchorPane anchorP;
@@ -265,11 +265,11 @@ ObservableList<String> maliList=FXCollections.observableArrayList("Andrijevica",
         qytetiBox.setValue("Skenderaj");
         qytetiBox.setItems(kosoveList);
           
-    	drejtimiBox.setValue("Automatikë e Kompjuterizuar dhe Robotikë");
+    	drejtimiBox.setValue("AutomatikÃ« e Kompjuterizuar dhe RobotikÃ«");
     	drejtimiBox.setItems(drejtimiList);
     	niveliBox.setValue("Bachelor");
     	niveliBox.setItems(niveliList);
-    	fakultetiBox.setValue("Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike");
+    	fakultetiBox.setValue("Fakulteti i InxhinierisÃ« Elektrike dhe Kompjuterike");
     	fakultetiBox.setItems(fakultetiList);	    	   
 	     
     }
@@ -334,7 +334,7 @@ ObservableList<String> maliList=FXCollections.observableArrayList("Andrijevica",
     @FXML
     private void shtetiCheck() {
     	if(shtetiBox.getValue().equals("Kosove")) {
-    		qytetiBox.setValue("Skënderaj");
+    		qytetiBox.setValue("SkÃ«nderaj");
     		qytetiBox.setItems(kosoveList);
     	}
     	else if(shtetiBox.getValue().equals("Shqiperi")) {
@@ -579,7 +579,7 @@ ObservableList<String> maliList=FXCollections.observableArrayList("Andrijevica",
 				txtDitelindja.getEditor().setText("");
 				txtTel.setText("");
 				shtetiBox.setValue("Kosove");
-				drejtimiBox.setValue("Automatikë e Kompjuterizuar dhe Robotikë");
+				drejtimiBox.setValue("AutomatikÃ« e Kompjuterizuar dhe RobotikÃ«");
 				niveliBox.setValue("Bachelor");
 				txtEmail.setText("");
 				txtAdresa.setText("");
