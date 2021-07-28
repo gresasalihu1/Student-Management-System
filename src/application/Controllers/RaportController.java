@@ -304,7 +304,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
                 String rez = res.getString("Totali");
                 txtKompjuterike.setText(rez);
             }
-//("Automatikë e Kompjuterizuar dhe Robotikë","Elektroenergjetikë","Elektronikë"," Inxhinieri Kompjuterike","Telekomunikacion");
+//("AutomatikÃ« e Kompjuterizuar dhe RobotikÃ«","ElektroenergjetikÃ«","ElektronikÃ«"," Inxhinieri Kompjuterike","Telekomunikacion");
 
             //Telekomunikacion
 
@@ -317,7 +317,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
             }
 
             //Elektroenergjetike
-            String query7 = "select count(*) as 'Totali' from studentet1  s where s.sdrejtimi = 'Elektroenergjetikë'";
+            String query7 = "select count(*) as 'Totali' from studentet1  s where s.sdrejtimi = 'ElektroenergjetikÃ«'";
             pst = conn.prepareStatement(query7);
             res = pst.executeQuery();
             while (res.next()) {
@@ -327,7 +327,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
 
 
             //Elektronike
-            String query8 = "select count(*) as 'Totali' from studentet1 s where s.sdrejtimi ='Elektronikë' ";
+            String query8 = "select count(*) as 'Totali' from studentet1 s where s.sdrejtimi ='ElektronikÃ«' ";
             pst = conn.prepareStatement(query8);
             res = pst.executeQuery();
             while (res.next()) {
@@ -337,7 +337,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
 
 
             //Automatike nqofse e qet kta duhet me qit edhe ata 
-            String query9 = "select count(*) as 'Totali' from studentet1 s where s.sdrejtimi = 'Automatikë e Kompjuterizuar dhe Robotikë'";
+            String query9 = "select count(*) as 'Totali' from studentet1 s where s.sdrejtimi = 'AutomatikÃ« e Kompjuterizuar dhe RobotikÃ«'";
             pst = conn.prepareStatement(query9);
             res = pst.executeQuery();
             while (res.next()) {
@@ -356,7 +356,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
             }
 
             //gjithesejt femra
-            String query12 = "select count(*) as 'Totali' from studentet1  where sgjinia = 'Femër'";
+            String query12 = "select count(*) as 'Totali' from studentet1  where sgjinia = 'FemÃ«r'";
             pst = conn.prepareStatement(query12);
             res = pst.executeQuery();
             while (res.next()) {
