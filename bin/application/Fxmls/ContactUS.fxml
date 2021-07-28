@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.ContactUs">
+   <children>
+      <ImageView fitHeight="671.0" fitWidth="872.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="60.0" layoutX="427.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/location.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="430.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/email.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="381.0" layoutY="411.0" text="grupijone@gmail.com" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="332.0" text="28 Nentori/Prishtine" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="returnbutton" fitHeight="46.0" fitWidth="70.0" layoutX="810.0" layoutY="14.0" onMouseClicked="#onReturnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/return.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="headerLabel" layoutX="200.0" layoutY="2.0" prefHeight="70.0" prefWidth="499.0" text="Ne jemi gjithmone pranë jushë." textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="60.0" layoutX="426.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/telephone.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="403.0" layoutY="233.0" text="+38344954980" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

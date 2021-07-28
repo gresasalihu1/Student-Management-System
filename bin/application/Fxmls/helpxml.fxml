@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.HelpController">
+   <children>
+      <ImageView fx:id="foto2id" fitHeight="618.0" fitWidth="753.0" layoutX="40.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/fotohelp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="foto1id" fitHeight="630.0" fitWidth="827.0" layoutX="14.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/foto123.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="leftimg" fitHeight="42.0" fitWidth="46.0" layoutX="371.0" onMouseClicked="#onLRClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Left%20Arrow_27px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rightimg" fitHeight="42.0" fitWidth="46.0" layoutX="427.0" onMouseClicked="#onLRClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Right%20Arrow_27px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
