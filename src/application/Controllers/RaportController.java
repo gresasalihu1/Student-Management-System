@@ -293,7 +293,7 @@ public void Btngjenero(ActionEvent actionEvent) throws SQLException {
             while (res.next()) {
                 String rez = res.getString("Totali");
                 txtViti4.setText(rez);
-            }// ti ku po pret per met marr kur nregister tonen ski semester hiq ? po femer mashkull qato mi marr krejt duhet me i marr, semestri te jetlira nuk po bon spo di une edhe as qe ja nin bile
+            } 
 
 
             //Inxhinieri Kompjuterike // automatiken pe qet kto tjerat jo piken provo hekja qitu posht
